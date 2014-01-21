@@ -1,0 +1,18 @@
+<%= text_field_tag :fizzbuzz_input %>
+<%= button_tag "convert", id: :fizzbuzz_convert %>
+<%= text_field_tag :fizzbuzz_output %>
+<script>
+$(document).ready(function(){
+  var printer = new DOMFizzBuzzPrinter($("#fizzbuzz_output"));
+  var app = new FizzBuzzApp(printer, new FizzBuzzConverter());
+  $("#fizzbuzz_convert").click(function(){
+    var input = $("#fizzbuzz_input").val();
+    if(String(parseInt(input)).length == input.length && ! isNaN(parseInt(input))){
+      app.render(parseInt(input));
+    }
+    else{
+      app.render(input);
+    }
+  })
+})
+</script>
