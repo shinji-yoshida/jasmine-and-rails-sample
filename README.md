@@ -20,3 +20,9 @@ end
 console...
 
 bundle install
+
+# generate jasmine setting and samples
+
+console...
+
+jasmine init
