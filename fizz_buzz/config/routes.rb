@@ -1,4 +1,6 @@
 FizzBuzz::Application.routes.draw do
+  get "fizz_buzz/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
