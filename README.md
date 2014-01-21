@@ -10,3 +10,7 @@ group :test, :development do
   gem 'sinon-rails'             # for stub, mock, spy in spec
   gem 'jasmine-sinon-rails'     # for jasmine-sinon-rails integration
 end
+
+console...
+
+bundle install
