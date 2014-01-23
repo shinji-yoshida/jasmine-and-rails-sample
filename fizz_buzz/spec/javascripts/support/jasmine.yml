@@ -11,8 +11,8 @@
 #   - dist/**/*.js
 #
 src_files:
-    - public/javascripts/**/*.js
-    - app/assets/javascripts/**/*.js
+  - "*.js"
+  - "*.coffee"
 
 # stylesheets
 #
@@ -64,6 +64,8 @@ spec_files:
 # src_dir: public
 #
 src_dir:
+  - public/javascripts
+  - app/assets/javascripts
 
 # spec_dir
 #

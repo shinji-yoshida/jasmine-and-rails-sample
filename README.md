@@ -29,20 +29,37 @@ jasmine init
 
 # setup jasmine.yml
 
-...
+.
+.
+.
+
 src_files:
-    - public/javascripts/**/*.js
-    - app/assets/javascripts/**/*.js  # add files in app/assets/javascripts
+  # src_dir で設定したディレクトリ以下の全ての js, coffee ファイルを対象にする
+  - "*.js"
+  - "*.coffee"
+
 .
 .
 .
+
 spec_files:
   - '**/*[sS]pec.js'
   - '**/*[sS]pec.coffee'        # accept .coffee
   - '**/*[sS]pec.js.coffee'     # accept .js.coffee
+
 .
 .
 .
-runner_output: "tmp/runner.html"  # spec runner file to check with browser
+
+src_dir:
+  # public/javascripts, app/asset/javascripts を ソースファイルの root にする
+  - public/javascripts
+  - app/assets/javascripts
+
+.
+.
+.
+
+runner_output: "tmp/runner.html"  # ブラウザで spec を実行できるようにする
 
 

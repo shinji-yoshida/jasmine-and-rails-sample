@@ -1,7 +1,9 @@
+# describe はテストをグループ化する
 describe 'FizzBuzzConverter 1', ->
   # describe はネストできる
   # (rspec にある context は jasmine では存在しない)
   describe 'convert', ->
+    # it はテストケース（rspec 用語では example）
     it '1 は 1, 2 = 2, 4 = 4', ->
       subject = new FizzBuzzConverter()
       expect(subject.convert(1)).toBe(1)
