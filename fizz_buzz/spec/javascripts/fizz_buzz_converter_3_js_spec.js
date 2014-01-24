@@ -38,7 +38,7 @@ describe('FizzBuzzConverter 3', function(){
     });
 
     it('数値以外の入力では例外が発生する', function(){
-      subject = this.subject;
+      var subject = this.subject;
       expect(function(){ subject.convert("foo"); }).toThrow();
       expect(function(){ subject.convert(null); }).toThrow();
       expect(function(){ subject.convert(1.1); }).not.toThrow();
