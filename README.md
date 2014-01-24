@@ -68,3 +68,9 @@ Console...
 
     # tmp/runner.html をブラウザで表示することで、ブラウザでもテストできる
 
+# 参考
+
+- jasmine
+  - http://pivotal.github.io/jasmine/
+- jasmine-headless-webkit
+  - http://johnbintz.github.io/jasmine-headless-webkit/
