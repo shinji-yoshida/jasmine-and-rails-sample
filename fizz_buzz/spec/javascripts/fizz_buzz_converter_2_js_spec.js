@@ -1,5 +1,6 @@
 describe('FizzBuzzConverter 2', function(){
   describe('convert', function(){
+    // 共通の setup 処理
     beforeEach(function(){
       this.subject = new FizzBuzzConverter();
     });
@@ -24,6 +25,7 @@ describe('FizzBuzzConverter 2', function(){
     });
 
     it('数値以外の入力では例外が発生する', function(){
+      // 実行コンテキストが変わって @subject にアクセス出来ないので、ローカル変数を使う
       var subject = this.subject;
       expect(function(){ subject.convert("foo"); }).toThrow();
       expect(function(){ subject.convert(null); }).toThrow();

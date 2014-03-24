@@ -1,6 +1,7 @@
 describe('FizzBuzzConverter 3', function(){
   describe('convert', function(){
     beforeEach(function(){
+      // custom matcher は it や beforeEach の中で追加できる
       this.addMatchers({
         toBeFizz: function(){
           return this.actual == 'fizz';
@@ -24,7 +25,7 @@ describe('FizzBuzzConverter 3', function(){
     });
 
     it('3 は fizz', function(){
-      expect(this.subject.convert(3)).toBeFizz();
+      expect(this.subject.convert(3)).toBeFizz(); // custom matcher
     });
 
     it('5 は buzz', function(){
