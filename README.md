@@ -71,6 +71,6 @@ Console...
 # 参考
 
 - jasmine
-  - http://pivotal.github.io/jasmine/
+  - https://jasmine.github.io/
 - jasmine-headless-webkit
   - http://johnbintz.github.io/jasmine-headless-webkit/
